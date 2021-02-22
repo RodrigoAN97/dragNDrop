@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firestarter-rod": {
+      "hosting": {
+        "firestarter": [
+          "firestarter-rod"
+        ]
+      }
+    }
+  }
+}
