@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { KanbanRoutingModule } from './kanban-routing.module';
+import { BoardsRoutingModule } from './boards-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -16,7 +16,7 @@ import { TaskDialogComponent } from './dialogs/task-dialog.component';
   declarations: [BoardListComponent, BoardComponent, BoardDialogComponent, TaskDialogComponent],
   imports: [
     CommonModule,
-    KanbanRoutingModule,
+    BoardsRoutingModule,
     SharedModule,
     FormsModule,
     DragDropModule,
@@ -25,4 +25,4 @@ import { TaskDialogComponent } from './dialogs/task-dialog.component';
   ],
   entryComponents: [BoardDialogComponent, TaskDialogComponent],
 })
-export class KanbanModule {}
+export class BoardsModule {}

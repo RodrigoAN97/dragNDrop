@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./kanban/kanban.module').then((m) => m.KanbanModule),
+      import('./boards/boards.module').then((m) => m.BoardsModule),
     canActivate: [AuthGuard],
   },
   {
