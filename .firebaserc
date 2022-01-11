@@ -1,14 +1,5 @@
 {
-  "targets": {
-    "firestarter-rod": {
-      "hosting": {
-        "firestarter": [
-          "firestarter-rod"
-        ]
-      }
-    }
-  },
   "projects": {
-    "default": "firestarter-rod"
+    "default": "boards-rod"
   }
 }
