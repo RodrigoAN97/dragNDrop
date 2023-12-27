@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -8,12 +8,12 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./email-login.component.scss'],
 })
 export class EmailLoginComponent implements OnInit {
-  form!: FormGroup;
+  form!: UntypedFormGroup;
   type: 'login' | 'signup' | 'reset' = 'signup';
   loading = false;
   serverMessage!: string;
 
-  constructor( private fb: FormBuilder, private auth: AuthService) {}
+  constructor( private fb: UntypedFormBuilder, private auth: AuthService) {}
 
   ngOnInit() {
     this.form = this.fb.group({
